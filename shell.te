@@ -44,3 +44,8 @@ unix_socket_connect(shelldomain, property, init)
 
 # ctl interface
 allow shelldomain ctl_dumpstate_prop:property_service set;
+
+# selinux getenforce/setenforce/restorecon
+allow shell selinuxfs:dir search;
+allow shell selinuxfs:file { read open };
+allow shell rootfs:file { read getattr open };
