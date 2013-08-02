@@ -58,3 +58,6 @@ type hci_attach_dev, dev_type;
 # All devices have a rpmsg device for
 # achieving remoteproc and rpmsg modules
 type rpmsg_device, dev_type;
+
+# /dev/__properties__
+type properties_device, dev_type, mlstrustedobject;
