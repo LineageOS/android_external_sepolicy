@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baee8101_162c5caa",
+        "filename": "mac_permissions.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 431
+      },
+      "writtenOn": "2013-08-19T07:20:18Z",
+      "side": 1,
+      "message": "Accidental removal? The \u003e is part of the deny-permission. It\u0027s all commented anyway, so not critical.",
+      "revId": "e9bc5ebc8d132cf7143e465048103c08ac6ec69f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
