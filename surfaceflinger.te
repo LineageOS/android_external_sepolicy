@@ -11,7 +11,6 @@ unix_socket_connect(surfaceflinger, property, init)
 # Perform Binder IPC.
 binder_use(surfaceflinger)
 binder_call(surfaceflinger, system)
-binder_call(surfaceflinger, appdomain)
 binder_service(surfaceflinger)
 allow surfaceflinger init:binder transfer;
 
