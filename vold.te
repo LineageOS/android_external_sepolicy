@@ -91,3 +91,5 @@ binder_call(vold, healthd)
 # talk to keymaster
 allow vold tee_device:chr_file rw_file_perms;
 
+# Vold can also run as minivold in the rootfs
+allow vold rootfs:file entrypoint;
