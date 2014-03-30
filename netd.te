@@ -39,6 +39,7 @@ allow netd dhcp:process signal;
 allow netd self:capability { dac_override chown fowner };
 allow netd wifi_data_file:file create_file_perms;
 allow netd wifi_data_file:dir rw_dir_perms;
+allow netd dhcp_data_file:dir rw_dir_perms;
 
 # Allow netd to spawn hostapd in it's own domain
 domain_auto_trans(netd, hostapd_exec, hostapd)
