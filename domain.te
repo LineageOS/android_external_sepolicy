@@ -227,8 +227,8 @@ neverallow domain kernel:security setbool;
 # that could be set from init.rc.
 neverallow { domain -init } kernel:security setsecparam;
 
-# Only init, ueventd and system_server should be able to access HW RNG
-neverallow { domain -init -system_server -ueventd -unconfineddomain } hw_random_device:chr_file *;
+# Only init, ueventd, qrngd and system_server should be able to access HW RNG
+neverallow { domain -init -system_server -ueventd -qrngd -unconfineddomain } hw_random_device:chr_file *;
 
 # Ensure that all entrypoint executables are in exec_type.
 neverallow domain { file_type -exec_type }:file entrypoint;
