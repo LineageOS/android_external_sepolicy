@@ -17,10 +17,11 @@ recovery_only(`
   allow recovery system_file:file execute_no_trans;
 
   # Mount filesystems.
-  allow recovery rootfs:dir mounton;
+  allow recovery rootfs:dir { create mounton };
   allow recovery fs_type:filesystem ~relabelto;
   allow recovery unlabeled:filesystem ~relabelto;
   allow recovery contextmount_type:filesystem relabelto;
+  allow recovery vfat:dir { read open };
 
   # Create and relabel files and directories under /system.
   allow recovery exec_type:{ file lnk_file } { create_file_perms relabelfrom relabelto };
