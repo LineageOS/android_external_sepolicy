@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7aa08908_f12bcc31",
+        "filename": "recovery.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2014-12-20T01:31:08Z",
+      "side": 1,
+      "message": "r_dir_perms might be more appropriate here.",
+      "revId": "8514807cd4f79f1ead327a9d0353986fcd880746",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
