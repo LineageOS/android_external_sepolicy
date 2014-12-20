@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7aa08908_d13050a1",
+        "filename": "vold.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2014-12-20T01:30:35Z",
+      "side": 1,
+      "message": "This could be enclosed in a recovery_only(`\u0027)  block.",
+      "revId": "f25d80d9251f8737ba84f4a508de70fb8db07df5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
