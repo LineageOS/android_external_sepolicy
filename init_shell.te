@@ -8,3 +8,6 @@ permissive_or_unconfined(init_shell)
 # Run helpers from / or /system without changing domain.
 allow init_shell rootfs:file execute_no_trans;
 allow init_shell system_file:file execute_no_trans;
+
+# property=sf.lcd_density
+allow init_shell display_prop:property_service set;

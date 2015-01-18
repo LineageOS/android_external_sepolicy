@@ -25,6 +25,7 @@ wlan.                   u:object_r:system_prop:s0
 dhcp.                   u:object_r:dhcp_prop:s0
 dhcp.bt-pan.result      u:object_r:pan_result_prop:s0
 bluetooth.              u:object_r:bluetooth_prop:s0
+user.language           u:object_r:system_prop:s0
 
 debug.                  u:object_r:debug_prop:s0
 debug.db.               u:object_r:debuggerd_prop:s0
@@ -61,3 +62,6 @@ ctl.                    u:object_r:ctl_default_prop:s0
 
 # NFC properties
 nfc.                    u:object_r:nfc_prop:s0
+
+# Display properties
+sf.lcd_density          u:object_r:display_prop:s0
