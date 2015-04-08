@@ -16,6 +16,24 @@
       "revId": "79ff523ac99b339914ccaa754e068072d64da542",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3ac371cc_73e7ea40",
+        "filename": "Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 8328
+      },
+      "writtenOn": "2015-04-08T07:44:38Z",
+      "side": 1,
+      "message": "introduced in http://review.cyanogenmod.org/#/c/93534/",
+      "parentUuid": "3ac371cc_133e76b8",
+      "revId": "79ff523ac99b339914ccaa754e068072d64da542",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
