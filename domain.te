@@ -275,6 +275,7 @@ neverallow {
     domain
     -appdomain
     -dumpstate
+    -mediaserver
     -shell
     userdebug_or_eng(`-su')
     -system_server
