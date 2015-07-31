@@ -1,6 +1,6 @@
 # Rules for all domains.
 
-# Allow reaping by init.
+# Allow reaping by init.de
 allow domain init:process sigchld;
 
 # Read access to properties mapping.
@@ -275,6 +275,7 @@ neverallow {
     domain
     -appdomain
     -dumpstate
+    userdebug_or_eng(`-mediaserver')
     -shell
     userdebug_or_eng(`-su')
     -system_server
