@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9f0e0f27_03525168",
+        "filename": "domain.te",
+        "patchSetId": 4
+      },
+      "lineNbr": 278,
+      "author": {
+        "id": 10984
+      },
+      "writtenOn": "2015-08-07T20:53:41Z",
+      "side": 1,
+      "message": "This makes me uneasy. \nYeah, we\u0027re making it userdebug_or_eng, but still.\n\nFrom what I see, V4A needs to be a system app, and we\u0027re \ntrying to circumvent it by giving mediaserver permission to \nexecute way more than what it should. \n\nThe \"userdebug_or_eng\" guard actually seems to be an \nindication that we know that this is *not* a good idea. So, \nif it isn\u0027t, why are we doing it in the first place?",
+      "revId": "a4b0c03d55b6b4f2f9721c967929b63d6cd171dd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
