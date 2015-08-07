@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9f0e0f27_606fc3c5",
+        "filename": "domain.te",
+        "patchSetId": 3
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 5681
+      },
+      "writtenOn": "2015-08-07T01:16:14Z",
+      "side": 1,
+      "message": "init.d",
+      "revId": "8d4b643202afc2ee7422ce801f39b3577d88f064",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
