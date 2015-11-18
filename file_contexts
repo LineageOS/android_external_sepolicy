@@ -264,6 +264,13 @@
 /data/bootchart(/.*)?		u:object_r:bootchart_data_file:s0
 
 #############################
+# Firmware files
+#
+
+# coldboot indication file
+/firmware/\.coldboot             u:object_r:coldboot_file:s0
+
+#############################
 # Expanded data files
 #
 /mnt/expand(/.*)?                                   u:object_r:mnt_expand_file:s0

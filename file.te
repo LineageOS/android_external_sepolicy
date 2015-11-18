@@ -196,6 +196,9 @@ type gps_control, file_type;
 # Used by vold
 type  proc_dirty_ratio, fs_type;
 
+# Managed by gatekeeperd
+type coldboot_file, file_type;
+
 # Allow files to be created in their appropriate filesystems.
 allow fs_type self:filesystem associate;
 allow sysfs_type sysfs:filesystem associate;
