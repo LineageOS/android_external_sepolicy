@@ -24,4 +24,7 @@ allow gatekeeperd user_service:service_manager find;
 allow gatekeeperd gatekeeper_data_file:dir rw_dir_perms;
 allow gatekeeperd gatekeeper_data_file:file create_file_perms;
 
+# For checking of presence of '.coldboot'
+r_dir_file(gatekeeperd, firmware_file)
+
 neverallow { domain -gatekeeperd } gatekeeper_service:service_manager add;
