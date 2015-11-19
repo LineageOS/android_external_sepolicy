@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7f515b1d_0cd05b50",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 14145
+      },
+      "writtenOn": "2015-11-19T05:45:06Z",
+      "side": 1,
+      "message": "Of course, this doesn\u0027t work anyway since /firmware is usually mounted as RO.  This gets rid of the selinux access violation at least.\n\nNothing cares about this .coldboot file yet, as far as I can tell.  If something does end up caring, gatekeeperd would need to be modified to use a non RO location.",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 59
+      },
+      "revId": "eecc9e3ec828fb8858838b393a3ff7d5b08817d3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
