@@ -128,6 +128,7 @@
 # System files
 #
 /system(/.*)?		u:object_r:system_file:s0
+/system/bin/mkfs\.f2fs	u:object_r:mkfs_exec:s0
 /system/bin/e2fsck	--	u:object_r:fsck_exec:s0
 /system/bin/fsck\.f2fs	--	u:object_r:fsck_exec:s0
 /system/bin/fsck_msdos	--	u:object_r:fsck_exec:s0
