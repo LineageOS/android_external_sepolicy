@@ -74,6 +74,11 @@ allow init self:capability { sys_rawio mknod };
 # Mounting filesystems from block devices.
 allow init dev_type:blk_file r_file_perms;
 
+# Allow init to format userdata or cache partition if wiped
+allow init block_device:dir search;
+allow init userdata_block_device:blk_file rw_file_perms;
+allow init cache_block_device:blk_file rw_file_perms;
+
 # Mounting filesystems.
 # Only allow relabelto for types used in context= mount options,
 # which should all be assigned the contextmount_type attribute.
