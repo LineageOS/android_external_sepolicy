@@ -281,6 +281,7 @@ allow system_server { apk_data_file apk_private_data_file }:{ dir file } { relab
 allow system_server system_data_file:file relabelfrom;
 allow system_server wallpaper_file:file relabelto;
 allow system_server wallpaper_file:file { rw_file_perms unlink };
+allow system_server wallpaper_file:lnk_file read;
 
 # Relabel /data/anr.
 allow system_server system_data_file:dir relabelfrom;
