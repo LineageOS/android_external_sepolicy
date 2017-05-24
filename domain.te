@@ -476,4 +476,4 @@ neverallow {
   -shell
   userdebug_or_eng(`-uncrypt')
   -installd
-} shell_data_file:lnk_file read;
+}
