@@ -43,15 +43,18 @@ allow zygote self:capability sys_admin;
 # allow zygote pmsg_device:chr_file { getattr };
 allow zygote debugfs:dir search;
 allow zygote debugfs:file { getattr };
+
 # Check validity of SELinux context before use.
 selinux_check_context(zygote)
 # Check SELinux permissions.
 selinux_check_access(zygote)
 # Read /seapp_contexts and /data/security/seapp_contexts
 security_access_policy(zygote)
+
 # Native bridge functionality requires that zygote replaces
 # /proc/cpuinfo with /system/lib/<ISA>/cpuinfo using a bind mount
 allow zygote proc_cpuinfo:file mounton;
+
 # Allow remounting rootfs as MS_SLAVE
 allow zygote rootfs:dir mounton;
 allow zygote sdcard_type:dir { write search setattr create add_name mounton }; # TODO: deprecated in M
@@ -60,16 +63,21 @@ allow zygote tmpfs:dir { write create add_name setattr mounton search }; # TODO:
 allow zygote tmpfs:filesystem { mount unmount };
 allow zygote fuse:filesystem { unmount };
 allow zygote labeledfs:filesystem remount; # TODO: deprecated in M
+allow zygote sdcardfs:filesystem { unmount };
+
 # Allowed to create user-specific storage source if started before vold
 allow zygote mnt_user_file:dir create_dir_perms;
 allow zygote mnt_user_file:lnk_file create_file_perms;
 # Allowed to mount user-specific storage into place
 allow zygote storage_file:dir { search mounton };
+
 # Handle --invoke-with command when launching Zygote with a wrapper command.
 allow zygote zygote_exec:file rx_file_perms;
+
 ###
 ### neverallow rules
 ###
+
 # Ensure that all types assigned to app processes are included
 # in the appdomain attribute, so that all allow and neverallow rules
 # written on appdomain are applied to all app processes.
