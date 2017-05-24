@@ -1,6 +1,7 @@
 # zygote
-type zygote, domain;
+type zygote, domain, domain_deprecated;
 type zygote_exec, exec_type, file_type;
+
 init_daemon_domain(zygote)
 typeattribute zygote mlstrustedsubject;
 # Override DAC on files and switch uid/gid.
